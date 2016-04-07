@@ -1,4 +1,4 @@
-<div class="starter-template">
+<!-- <div class="starter-template"> -->
 	<h1>Opdracht Login</h1>
     <p class="lead">Een login pagina</p>
 <ol>
@@ -16,8 +16,8 @@ $users = array(
   "test@test.nl"  => "test",
   "piet@worldonline.nl"  => "doetje123",
   "klaas@carpets.nl"  => "snoepje777",
-  "truushendriks@wegweg.nl"  => "arkiearkie201"
-  "gnarfie@brabbel.com => "gnarfsel"
+  "truushendriks@wegweg.nl"  => "arkiearkie201",
+  "gnarfie@brabbel.com" => "gnarfsel"
 );
 
 $rollen = array(
@@ -51,14 +51,14 @@ if(isset($_POST['login'])) {
 
 //===== functions ======
 
-function checkLogin($users, $rollen, $login, $pwd) { 
+function checkLogin($users, $rollen, $login, $pwd) {
   foreach($users as $uname => $upwd) {
       if($login == $uname && $pwd == $upwd) {
         $_SESSION['rol'] = $rollen[$uname];
-        $_SESSION['uname'] = $uname; 
+        $_SESSION['uname'] = $uname;
         return true;
       }
-  }    
+  }
   return false;
 }
 
@@ -73,8 +73,9 @@ if(isset($_SESSION['rol'])) {
 }
 
 if (!$show_form) {
-  echo "<p>Ga naar <a href='".$_SERVER[PHP_SELF]."?p=13-php-getout'>deze zwaar beveiligde pagina</a>...</p>";
-  echo "<p><a href='".$_SERVER[PHP_SELF]."?p=12-php-admin&logout'>Uitloggen</a></p>";
+	echo "<p>Ga naar <a href='".$_SERVER[PHP_SELF]."?p=13-php-getout'>deze zwaar beveiligde pagina</a>...</p>";
+	echo "<p>
+	<a href='".$_SERVER[PHP_SELF]."?p=12-php-admin&logout'>Uitloggen</a></p>";
 } else {
 ?>
 
