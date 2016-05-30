@@ -16,8 +16,7 @@ $users = array(
   "test@test.nl"  => "test",
   "piet@worldonline.nl"  => "doetje123",
   "klaas@carpets.nl"  => "snoepje777",
-  "truushendriks@wegweg.nl"  => "arkiearkie201",
-	"gnarfie@brabbel.com => "gnarfsel"
+  "truushendriks@wegweg.nl"  => "arkiearkie201"
 );
 
 $rollen = array(
