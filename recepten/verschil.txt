@@ -1,0 +1,10 @@
+diff --git a/recepten/foo.txt b/recepten/foo.txt
+index 15d2ee5..8004cc5 100644
+--- a/recepten/foo.txt
++++ b/recepten/foo.txt
+@@ -1,4 +1,4 @@
+-Hans en Pietje wonen met hun vader en stiefmoeder aan de rand van het bos, vader is houthakker en het gezin is erg arm.
++Hans en Grietje wonen met hun vader en stiefmoeder aan de rand van het bos, vader is houthakker en het gezin is erg arm.
+ Het echtpaar besluit de kinderen in het bos achter te laten, omdat ze geen eten meer voor hen hebben.
+ De kinderen zijn echter wakker door de honger en horen het plan, waarna Hans 's nachts kiezelstenen zoekt en in zijn jaszak verstopt.
+ Hans blijft steeds staan en zegt dat hij naar zijn witte kat op het dak kijkt, wanneer vader hem vraagt waarom hij zo treuzelt.
