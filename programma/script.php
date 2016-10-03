@@ -1,11 +1,9 @@
 <div class="starter-template">
 	<h1>Opdracht Login</h1>
     <p class="lead">Een login pagina</p>
-<ol>
-<li>Maak een pagina met een formulier en daarin invulvelden voor een email-adres, een wachtwoord en een submit-knop.</li>
-<li>Als 1 van onderstaande email-adres/wachtwoord-combinaties wordt gegeven, dan wordt er een melding weergegeven: “Welkom”</li>
-<li>Als de email-adres/wachtwoord-combinatie niet voorkomt, dan wordt er een melding weergegven met: “Sorry, geen toegang!”</li>
-</ol>
+    <p>Je kunt op twee manieren inloggen. Je kunt inloggen als gewone gebruiker,
+    maar je kunt ook inloggen als administrator.</p>
+
 <p>test@test.nl / test = administrator</p>
 <p>klaas@carpets.nl / snoepje777 = gebruiker</p>
 
@@ -48,6 +46,7 @@ if(isset($_POST['login'])) {
   }
 }
 
+
 //===== functions ======
 
 function checkLogin($users, $rollen, $login, $pwd) {
@@ -63,7 +62,7 @@ function checkLogin($users, $rollen, $login, $pwd) {
 
 function logout() {
     $_SESSION = array();
-    session_destroy();
+    //session_destroy();
 }
 
 echo "<p>".$message."</p>";
@@ -72,8 +71,7 @@ if(isset($_SESSION['rol'])) {
 }
 
 if (!$show_form) {
-  echo "<p>Ga naar <a href='".$_SERVER[PHP_SELF]."?p=13-php-getout'>deze zwaar beveiligde pagina</a>...</p>";
-  echo "<p><a href='".$_SERVER[PHP_SELF]."?p=12-php-admin&logout'>Uitloggen</a></p>";
+  echo "<p><a href='".$_SERVER[PHP_SELF]."?logout'>Uitloggen</a></p>";
 } else {
 ?>
 
